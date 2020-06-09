@@ -1,3 +1,5 @@
+![.github/workflows/node.js.yml](https://github.com/vishalm/mocha-wdio-demo/workflows/.github/workflows/node.js.yml/badge.svg?branch=master)
+
 # Webdriver IO demo with Mocha and Allure Report
 
 ## Real Life demo for Hotel Search on Vacationsdirect.com
