@@ -5,6 +5,7 @@
   "main": "./node_modules/.bin/wdio",
   "scripts": {
     "test": "wdio wdio.conf.js",
+    "test.ga": "wdio wdio.githubactions.conf",
     "test.sauce": "wdio wdio.saucelabs.conf.js",
     "lint": "eslint .",
     "report": "allure serve report/allure-results",
