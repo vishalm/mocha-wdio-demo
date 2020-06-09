@@ -10,4 +10,4 @@ jobs:
     - uses: actions/checkout@v1
     - run: npm ci  
     - name: Run tests
-      run: npm test.ga
+      run: npm run test.ga
