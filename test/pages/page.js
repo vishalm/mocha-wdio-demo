@@ -5,6 +5,7 @@ export default class Page {
 
   open(path) {
     browser.url(path);
+    return this;
   }
 
   verifyTextInPage(text) {

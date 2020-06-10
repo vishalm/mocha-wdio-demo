@@ -4,13 +4,14 @@
   "description": "Test Architect - Technical Challenge: WEB Test Automation WebdriverIO v6 with Mocha",
   "main": "./node_modules/.bin/wdio",
   "scripts": {
-    "test": "wdio wdio.conf.js",
-    "test.ga": "wdio wdio.githubactions.conf.js",
-    "test.sauce": "wdio wdio.saucelabs.conf.js",
-    "lint": "eslint .",
+    "test": "npm run lint.fix && wdio wdio.conf.js",
+    "test.local.grid": "npm run lint && wdio wdio.githubactions.conf.js",
+    "test.ga": "npm run lint && wdio wdio.githubactions.conf.js",
+    "test.sauce": "npm run lint && wdio wdio.saucelabs.conf.js",
+    "lint": "eslint test",
+    "lint.fix": "eslint test --fix",
     "report": "allure serve report/allure-results",
     "report.ci": "allure generate report/allure-results --clean -o allure-report",
-    "report.teams": "TEST_FRAMEWORK=wdio PROJECT_NAME=\"WebdriverIO Boilerplate\" node ./support/utils/teamsReporter.js ../../report/json/testResults.json"
   },
   "keywords": [
     "mocha",
@@ -28,6 +29,8 @@
     "@wdio/cli": "^6.0.13",
     "@wdio/sync": "^6.0.12",
     "chai": "^4.2.0",
+    "chai-sorted": "^0.2.0",
+    "eslint-plugin-webdriverio": "^1.0.1",
     "superagent": "^5.2.2"
   },
   "devDependencies": {
