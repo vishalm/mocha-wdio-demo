@@ -5,7 +5,7 @@ const gaConfig = Object.assign(baseConfig, {
   port: 4444,
   path: '/wd/hub',
   capabilities: [{
-    maxInstances: 5, // 5 parallel threads
+    maxInstances: 1, // 5 parallel threads
     browserName: 'chrome',
   }],
 });

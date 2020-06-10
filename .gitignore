@@ -4,3 +4,4 @@ coverage/
 report/
 node_modules
 local_utils
+.DS_Store
