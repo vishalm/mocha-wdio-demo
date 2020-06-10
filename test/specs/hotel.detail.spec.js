@@ -25,8 +25,8 @@ describe('Hotel Detail', () => {
     return [month, day, year.toString().substring(year.toString().length - 2)].join('-');
   }
 
-  // should show availablility of rooms after selecting a hotel from search results filter by stars
-  it('should show availablility of rooms', () => {
+  // should show availability of rooms after selecting a hotel from search results filter by stars
+  it('should show availability of rooms', () => {
     const destinationCity = 'New York, NY';
     const checkInDate = todayDate(currentDate.addDays(2)).toString();
     const checkoutDate = todayDate(currentDate.addDays(4)).toString();
@@ -51,7 +51,7 @@ describe('Hotel Detail', () => {
     searchResultPage
         .selectFirstResult();
 
-    // Assert Availablity is more then 0 rooms
+    // Assert Availability is more then 0 rooms
     expect(hotelDetailPage.getHotelRoomCount() > 0).toBeTruthy();
 
     utilities.takeScreenshot('StarRating_Availability');

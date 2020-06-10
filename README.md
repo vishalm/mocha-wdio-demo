@@ -38,7 +38,7 @@ cd mocha-wdio-demo
 npm install
 ```
 
-### Continous Integration
+### Continuos Integration
 ```
 #Github Action is for PR and Merge to Master
 .github/workflows/node.js.yml

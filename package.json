@@ -11,7 +11,7 @@
     "lint": "eslint test",
     "lint.fix": "eslint test --fix",
     "report": "allure serve report/allure-results",
-    "report.ci": "allure generate report/allure-results --clean -o allure-report",
+    "report.ci": "allure generate report/allure-results --clean -o allure-report"
   },
   "keywords": [
     "mocha",
