@@ -66,7 +66,7 @@ npm install
 
 #### Test Execution
 
-##### Lint Fix
+##### Lint Fix.
 ```
 npm run lint.fix
 ```
