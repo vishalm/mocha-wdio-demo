@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'macOS-latest'
 
 steps:
 - task: NodeTool@0
@@ -20,5 +20,11 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    npm run test
+    npx wdio wdio.conf.js
   displayName: 'UI Test'
+
+- task: PublishTestResults@2
+  inputs: 
+   testResultsFormat: 'Junit'
+   testResultsFiles: '*.xml' 
+
