@@ -1,4 +1,9 @@
+
+### Github Actions
 ![.github/workflows/node.js.yml](https://github.com/vishalm/mocha-wdio-demo/workflows/.github/workflows/node.js.yml/badge.svg?branch=master)
+
+### Azure DevOps
+[![Build Status](https://dev.azure.com/vishalmishra84/Test%20Project/_apis/build/status/vishalm.mocha-wdio-demo?branchName=master)](https://dev.azure.com/vishalmishra84/Test%20Project/_build/latest?definitionId=3&branchName=master)
 
 # Webdriver IO demo with Mocha
 
