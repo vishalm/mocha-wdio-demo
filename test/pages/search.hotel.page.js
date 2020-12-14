@@ -2,6 +2,8 @@ import Page from './page';
 
 class SearchHotelPage extends Page {
   get searchHotelButton() {return $('#search-hotel-button');}
+  // get searchHotelButton() {return $('#hotel__guests');}
+
   get inputDestination() {return $('#inputDestination');}
 
   open() {
