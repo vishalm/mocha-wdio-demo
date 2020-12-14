@@ -97,7 +97,7 @@ local config = wdio.conf.js
 
 ##### Remote
 ```
-local config = wdio.conf.js
+local config = test.local.grid
 ```
 
 ### Reports
