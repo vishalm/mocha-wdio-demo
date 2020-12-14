@@ -26,5 +26,5 @@ steps:
 - task: PublishTestResults@2
   inputs: 
    testResultsFormat: 'Junit'
-   testResultsFiles: '*.xml' 
+   testResultsFiles: 'report/junit/*.xml' 
 
