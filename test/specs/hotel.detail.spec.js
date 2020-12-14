@@ -37,8 +37,9 @@ describe('Hotel Detail', () => {
         .verifyTextInPage('Search for Flights');
 
     searchHotelPage
-        .open()
-        .verifyTextInPage('Search for Hotels');
+        .open();
+
+    // searchHotelPage.verifyTextInPage('Search for Hotels');
 
     // Search for hotels in New York City for dates a month in the future.
     // Filter hotel search results based on 'Star Rating'.

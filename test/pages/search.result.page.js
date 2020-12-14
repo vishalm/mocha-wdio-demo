@@ -7,7 +7,7 @@ class SearchResultPage extends Page {
 
   get datePickerCalendar() {return $('#datepicker-div');}
 
-  get hotelSearchButton() {return $('#hotelSearchButton');}
+  get hotelSearchButton() {return $('.hotel__search--desktop');}
 
   get starRatingFilterLink() {return $('#StarRating');}
 
@@ -16,7 +16,8 @@ class SearchResultPage extends Page {
   get getHotelStarsList()
   {return $$('.hotelresults-list-container li.js-hotel-result dl.hotel-results-hotel-info dd:nth-child(4)');} // eslint-disable-line max-len
 
-  get firstHotelInResult() {return $('dl.hotel-results-hotel-info a.hotel-name-title');}
+  get firstHotelInResult() {return $('a.hotel-name-titleshow-guest-summary');}
+  // hotel-name js-sas hotel-name-titleshow-guest-summary
 
   open() {
     return this;
