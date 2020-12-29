@@ -15,6 +15,20 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'sonar'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'vishalmishra84_Test-Project'
+    cliProjectName: 'Test Project'
+    cliSources: '.'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.organization=vishalmishra84
+
 - script: |
     npm install
   displayName: 'npm install'
