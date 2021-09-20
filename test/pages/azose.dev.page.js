@@ -1,7 +1,7 @@
 import Page from './page';
 
 class AZOSEDevPage extends Page {
-  get logo() {return $('#.logo');}
+  get logo() {return $('.logo');}
   open() {
     super.open('');
     return this;
