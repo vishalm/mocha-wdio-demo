@@ -7,6 +7,7 @@
     "test": "npm run lint.fix && wdio wdio.conf.js",
     "test.local.grid": "npm run lint && wdio wdio.githubactions.conf.js",
     "test.ga": "npm run lint && wdio wdio.githubactions.conf.js",
+    "test.azd": "npm run lint && wdio wdio.azuredevops.conf.js",
     "test.sauce": "npm run lint && wdio wdio.saucelabs.conf.js",
     "lint": "eslint test",
     "lint.fix": "eslint test --fix",
