@@ -1,5 +1,5 @@
 import azOSEDevPage from '../pages/azose.dev.page';
-
+const chai = require('chai');
 chai.use(require('chai-sorted'));
 
 describe('Azure DevOps Test', () => {
