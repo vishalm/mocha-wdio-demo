@@ -9,7 +9,7 @@ class AZOSEDevPage extends Page {
 
   isLogoPresent() {
     this.logo.waitForDisplayed({ timeout: 20000 });
-    return this.logo.isExisting()
+    return this.logo.isExisting();
   }
 }
 
