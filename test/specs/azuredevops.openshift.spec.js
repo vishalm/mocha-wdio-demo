@@ -2,7 +2,7 @@ import azOSEDevPage from '../pages/azose.dev.page';
 
 chai.use(require('chai-sorted'));
 
-describe('Hotel Detail', () => {
+describe('Azure DevOps Test', () => {
 
 
 
