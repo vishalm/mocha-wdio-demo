@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Run WDIO tests
     steps:
+    - uses: reviewdog/action-setup@v1
+      with:
+          reviewdog_version: latest
     - name: Start selenoid
       uses: Xotabu4/selenoid-github-action@v1
     - uses: actions/checkout@v1
